@@ -1,10 +1,14 @@
 # Currency 💵
 # Codédex
 
-pesos = int(input('What do you have left in pesos? '))
-soles = int(input('What do you have left in soles? '))
-reais = int(input('What do you have left in reais? '))
+pesos = float(input("what you have left in pesos"))
+soles = float(input("what you have left in soles"))
+reais = float(input("what you have left in reais"))
 
-total = pesos * 0.00025 + soles * 0.28 + reais * 0.21
+col_usd = pesos * (current conversion rate colombian pesos to usd)
+soles_usd = soles * (current conversion rate peruvian soles to usd)
+reais_usd = reais * (current conversion rate brazillian reais to usd)
 
-print(total)
+total_usd = col_usd + soles_usd + reais_usd
+
+print(total_usd)
